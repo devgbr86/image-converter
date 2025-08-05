@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VERT-IMAGE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>VERT-IMAGE⚙️</h1>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <label for="imageFile">Selecione a imagem (JPG, PNG, WebP):</label>
+    <input type="file" id="imageFile" name="imageFile" accept=".jpg,.jpeg,.png,.webp" required />
+
+    <label for="formatSelect">Formato para converter:</label>
+    <select id="formatSelect" name="formatSelect" required>
+      <option value="">-- Escolha --</option>
+      <option value="jpeg">JPEG</option>
+      <option value="png">PNG</option>
+      <option value="webp">WebP</option>
+    </select>
+
+    <button type="submit">Converter</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
